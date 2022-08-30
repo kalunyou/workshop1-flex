@@ -5,7 +5,7 @@ body {
 }
 
 .top-bar {
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: gray;
   display: -webkit-box;
@@ -34,7 +34,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
-  width: 220px;
+  width: 250px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -178,6 +178,7 @@ body {
   height: 120px;
   background-color: brown;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .story-item {
@@ -215,5 +216,93 @@ body {
 .story-detail h5 {
   margin: 0;
   padding-top: 5px;
+}
+
+.post {
+  background-color: cadetblue;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-profile img {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.account-detail-post {
+  padding-left: 10px;
+  line-height: 0.05px;
+}
+
+.post-pic {
+  padding-bottom: 5px;
+}
+
+.post-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.post-action-group {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section-line {
+  border: 0.5px solid lightgray;
+  width: 100%;
+}
+
+.post-comment-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.post-comment-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-comment-input input {
+  margin-left: 5px;
+  border-color: transparent;
+}
+
+#post {
+  color: #00b9f1;
 }
 /*# sourceMappingURL=style.css.map */
