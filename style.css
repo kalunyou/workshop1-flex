@@ -1,7 +1,7 @@
 body {
   background-color: white;
   height: 100vh;
-  padding: 0;
+  margin: 0;
 }
 
 .top-bar {
@@ -17,6 +17,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom-color: black;
+  border-bottom-width: 10px;
+  margin-bottom: 20px;
 }
 
 .top-bar input {
@@ -35,5 +38,24 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feed {
+  background-color: gold;
+  width: 420px;
+}
+
+.suggestions {
+  background-color: silver;
+  width: 320px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 body {
   background-color: white;
   height: 100vh;
-  padding: 0;
+  margin: 0;
 }
 .top-bar {
   height: 50px;
@@ -10,6 +10,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom-color: black;
+  border-bottom-width: 10px;
+  margin-bottom: 20px;
 }
 
 .top-bar input {
@@ -24,4 +27,19 @@ body {
   background-color: white;
   width: 200px;
   justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.feed {
+  background-color: gold;
+  width: 420px;
+}
+
+.suggestions {
+  background-color: silver;
+  width: 320px;
 }
