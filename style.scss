@@ -25,8 +25,12 @@ body {
 .menu {
   display: flex;
   background-color: white;
-  width: 200px;
+  width: 220px;
   justify-content: space-between;
+}
+
+#profile {
+  border-radius: 50%;
 }
 
 .container {
@@ -42,4 +46,79 @@ body {
 .suggestions {
   background-color: silver;
   width: 320px;
+  padding-left: 35px;
+  padding-top: 40px;
+}
+
+.account-swt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+#acc-bio {
+  color: gray;
+}
+
+#swt-btn {
+  color: rgb(0, 185, 241);
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#profile-acc-swt {
+  border-radius: 50%;
+}
+
+.account-suggestions {
+  display: flex;
+  margin-top: 10px;
+}
+
+.suggess-txt {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+#suggess-btn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.suggess-acc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggess-acc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggess-acc img {
+  border-radius: 50%;
+}
+
+.account-sgt-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+#follow-btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(0, 185, 241);
 }

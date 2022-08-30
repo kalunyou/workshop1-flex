@@ -34,10 +34,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: white;
-  width: 200px;
+  width: 220px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#profile {
+  border-radius: 50%;
 }
 
 .container {
@@ -57,5 +61,111 @@ body {
 .suggestions {
   background-color: silver;
   width: 320px;
+  padding-left: 35px;
+  padding-top: 40px;
+}
+
+.account-swt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+#acc-bio {
+  color: gray;
+}
+
+#swt-btn {
+  color: #00b9f1;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+#profile-acc-swt {
+  border-radius: 50%;
+}
+
+.account-suggestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.suggess-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: gray;
+}
+
+#suggess-btn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.suggess-acc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suggess-acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.suggess-acc img {
+  border-radius: 50%;
+}
+
+.account-sgt-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+#follow-btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: #00b9f1;
 }
 /*# sourceMappingURL=style.css.map */
