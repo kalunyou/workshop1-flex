@@ -19,7 +19,7 @@ body {
           align-items: center;
   border-bottom-color: black;
   border-bottom-width: 10px;
-  margin-bottom: 20px;
+  position: fixed;
 }
 
 .top-bar input {
@@ -179,6 +179,7 @@ body {
   background-color: brown;
   border-radius: 8px;
   margin-bottom: 15px;
+  margin-top: 70px;
 }
 
 .story-item {
