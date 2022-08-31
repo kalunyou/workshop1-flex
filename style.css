@@ -44,10 +44,6 @@ body {
   border-color: transparent;
 }
 
-#search {
-  padding-left: 20px;
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
