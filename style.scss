@@ -2,244 +2,210 @@ body {
   background-color: white;
   height: 100vh;
   margin: 0;
-}
-.top-bar {
-  display: flex;
-  height: 60px;
-  width: 100%;
-  background-color: gray;
-  border-bottom: 1px solid black;
-  position: fixed;
-  justify-content: center;
-}
+  .top-bar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: gray;
+    border-bottom: 1px solid black;
+    position: fixed;
+    justify-content: center;
+    .top-bar-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1024px;
+      height: 100%;
+      #logo {
+        padding-left: 85px;
+      }
+      #search {
+        margin-left: 30px;
+      }
+      input {
+        border-radius: 5px;
+        height: 30px;
+        width: 250px;
+        border-color: transparent;
+      }
+      .menu {
+        display: flex;
+        background-color: white;
+        width: 250px;
+        justify-content: space-between;
+        #profile {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 
-.top-bar-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1024px;
-  height: 100%;
-}
-
-#logo {
-  padding-left: 85px;
-}
-
-#search{
-  margin-left: 30px;
-}
-
-.top-bar input {
-  border-radius: 5px;
-  height: 30px;
-  width: 250px;
-  border-color: transparent;
-}
-
-.menu {
-  display: flex;
-  background-color: white;
-  width: 250px;
-  justify-content: space-between;
-}
-
-#profile {
-  border-radius: 50%;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  max-width: 740px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.feed {
-  background-color: gold;
-  max-width: 420px;
-
-}
-
-.suggestions {
-  background-color: silver;
-  width: 320px;
-  padding-left: 35px;
-  padding-top: 110px;
-}
-
-.account-swt {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.account {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.account-detail {
-  padding-left: 20px;
-  line-height: 0.05px;
-}
-
-#acc-bio {
-  color: gray;
-}
-
-#swt-btn {
-  color: rgb(0, 185, 241);
-  background-color: transparent;
-  border-color: transparent;
-}
-
-#profile-acc-swt {
-  border-radius: 50%;
-}
-
-.account-suggestions {
-  display: flex;
-  margin-top: 10px;
-}
-
-.suggess-txt {
-  display: flex;
-  justify-content: space-between;
-  color: gray;
-}
-
-#suggess-btn {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.suggess-acc-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.suggess-acc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.suggess-acc img {
-  border-radius: 50%;
-}
-
-.account-sgt-detail {
-  padding-left: 20px;
-  line-height: 0.05px;
-}
-
-#follow-btn {
-  background-color: transparent;
-  border-color: transparent;
-  color: rgb(0, 185, 241);
-}
-
-#acc-follow {
-  color: gray;
-}
-
-.story {
-  width: 100%;
-  height: 120px;
-  background-color: brown;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  margin-top: 85px;
-}
-
-.story-item {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.story-item img {
-  border-radius: 50%;
-}
-
-.story-detail {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.story-detail h5 {
-  margin: 0;
-  padding-top: 5px;
-}
-
-.post {
-  background-color: cadetblue;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.post-profile {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.post-profile img {
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.account-detail-post {
-  padding-left: 10px;
-  line-height: 0.05px;
-}
-
-.post-pic {
-  padding-bottom: 5px;
-}
-
-.post-action {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.post-action-group {
-  width: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#section-line {
-  border: 0.5px solid lightgray;
-  width: 100%;
-}
-
-.post-comment-action {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.post-comment-input {
-  display: flex;
-}
-
-.post-comment-input input {
-  margin-left: 5px;
-  border-color: transparent;
-}
-
-#post {
-  color: rgb(0, 185, 241);
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    .feed {
+      background-color: gold;
+      max-width: 420px;
+      .story {
+        width: 100%;
+        height: 120px;
+        background-color: brown;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        margin-top: 85px;
+        .story-item {
+          height: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .story-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+              border-radius: 50%;
+            }
+            h5 {
+              margin: 0;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+      .post {
+        background-color: cadetblue;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        .post-profile {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          #profile {
+            border-radius: 50%;
+          }
+          img {
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+          .account-detail-post {
+            padding-left: 10px;
+            line-height: 0.05px;
+            #acc-bio {
+              color: gray;
+            }
+          }
+        }
+        .post-pic {
+          padding-bottom: 5px;
+        }
+        .post-action {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 10px;
+          margin-right: 10px;
+          .post-action-group {
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        #section-line {
+          border: 0.5px solid lightgray;
+          width: 100%;
+        }
+        .post-comment-action {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          .post-comment-input {
+            display: flex;
+            input {
+              margin-left: 5px;
+              border-color: transparent;
+            }
+          }
+          #post {
+            color: rgb(0, 185, 241);
+          }
+        }
+      }
+    }
+    .suggestions {
+      background-color: silver;
+      width: 320px;
+      padding-left: 35px;
+      padding-top: 110px;
+      .account-swt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .account {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          #profile-acc-swt {
+            border-radius: 50%;
+          }
+          .account-detail {
+            padding-left: 20px;
+            line-height: 0.05px;
+            #acc-bio {
+              color: gray;
+            }
+          }
+        }
+        #swt-btn {
+          color: rgb(0, 185, 241);
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+      .acc-suggestions {
+        display: flex;
+        flex-direction: column;
+        .suggess-txt {
+          display: flex;
+          justify-content: space-between;
+          color: gray;
+          #suggess-btn {
+            background-color: transparent;
+            border-color: transparent;
+          }
+        }
+        .suggess-acc-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .suggess-acc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              border-radius: 50%;
+            }
+            .account-sgt-detail {
+              padding-left: 20px;
+              line-height: 0.05px;
+              #acc-follow {
+                color: gray;
+              }
+            }
+          }
+          #follow-btn {
+            background-color: transparent;
+            border-color: transparent;
+            color: rgb(0, 185, 241);
+          }
+        }
+      }
+    }
+  }
 }

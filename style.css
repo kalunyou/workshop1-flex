@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.top-bar {
+body .top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +18,7 @@ body {
           justify-content: center;
 }
 
-.top-bar-item {
+body .top-bar .top-bar-item {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,22 +33,22 @@ body {
   height: 100%;
 }
 
-#logo {
+body .top-bar .top-bar-item #logo {
   padding-left: 85px;
 }
 
-#search {
+body .top-bar .top-bar-item #search {
   margin-left: 30px;
 }
 
-.top-bar input {
+body .top-bar .top-bar-item input {
   border-radius: 5px;
   height: 30px;
   width: 250px;
   border-color: transparent;
 }
 
-.menu {
+body .top-bar .top-bar-item .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,11 +59,11 @@ body {
           justify-content: space-between;
 }
 
-#profile {
+body .top-bar .top-bar-item .menu #profile {
   border-radius: 50%;
 }
 
-.container {
+body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,127 +75,12 @@ body {
   margin-right: auto;
 }
 
-.feed {
+body .container .feed {
   background-color: gold;
   max-width: 420px;
 }
 
-.suggestions {
-  background-color: silver;
-  width: 320px;
-  padding-left: 35px;
-  padding-top: 110px;
-}
-
-.account-swt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.account-detail {
-  padding-left: 20px;
-  line-height: 0.05px;
-}
-
-#acc-bio {
-  color: gray;
-}
-
-#swt-btn {
-  color: #00b9f1;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-#profile-acc-swt {
-  border-radius: 50%;
-}
-
-.account-suggestions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
-}
-
-.suggess-txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: gray;
-}
-
-#suggess-btn {
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.suggess-acc-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.suggess-acc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.suggess-acc img {
-  border-radius: 50%;
-}
-
-.account-sgt-detail {
-  padding-left: 20px;
-  line-height: 0.05px;
-}
-
-#follow-btn {
-  background-color: transparent;
-  border-color: transparent;
-  color: #00b9f1;
-}
-
-#acc-follow {
-  color: gray;
-}
-
-.story {
+body .container .feed .story {
   width: 100%;
   height: 120px;
   background-color: brown;
@@ -204,7 +89,7 @@ body {
   margin-top: 85px;
 }
 
-.story-item {
+body .container .feed .story .story-item {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,11 +101,7 @@ body {
           align-items: center;
 }
 
-.story-item img {
-  border-radius: 50%;
-}
-
-.story-detail {
+body .container .feed .story .story-item .story-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,18 +117,22 @@ body {
           align-items: center;
 }
 
-.story-detail h5 {
+body .container .feed .story .story-item .story-detail img {
+  border-radius: 50%;
+}
+
+body .container .feed .story .story-item .story-detail h5 {
   margin: 0;
   padding-top: 5px;
 }
 
-.post {
+body .container .feed .post {
   background-color: cadetblue;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
-.post-profile {
+body .container .feed .post .post-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,22 +144,30 @@ body {
           align-items: center;
 }
 
-.post-profile img {
+body .container .feed .post .post-profile #profile {
+  border-radius: 50%;
+}
+
+body .container .feed .post .post-profile img {
   margin-left: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.account-detail-post {
+body .container .feed .post .post-profile .account-detail-post {
   padding-left: 10px;
   line-height: 0.05px;
 }
 
-.post-pic {
+body .container .feed .post .post-profile .account-detail-post #acc-bio {
+  color: gray;
+}
+
+body .container .feed .post .post-pic {
   padding-bottom: 5px;
 }
 
-.post-action {
+body .container .feed .post .post-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +178,7 @@ body {
   margin-right: 10px;
 }
 
-.post-action-group {
+body .container .feed .post .post-action .post-action-group {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,12 +188,12 @@ body {
           justify-content: space-between;
 }
 
-#section-line {
+body .container .feed .post #section-line {
   border: 0.5px solid lightgray;
   width: 100%;
 }
 
-.post-comment-action {
+body .container .feed .post .post-comment-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,18 +207,136 @@ body {
   margin-right: 10px;
 }
 
-.post-comment-input {
+body .container .feed .post .post-comment-action .post-comment-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.post-comment-input input {
+body .container .feed .post .post-comment-action .post-comment-input input {
   margin-left: 5px;
   border-color: transparent;
 }
 
-#post {
+body .container .feed .post .post-comment-action #post {
+  color: #00b9f1;
+}
+
+body .container .suggestions {
+  background-color: silver;
+  width: 320px;
+  padding-left: 35px;
+  padding-top: 110px;
+}
+
+body .container .suggestions .account-swt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .suggestions .account-swt .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .suggestions .account-swt .account #profile-acc-swt {
+  border-radius: 50%;
+}
+
+body .container .suggestions .account-swt .account .account-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+body .container .suggestions .account-swt .account .account-detail #acc-bio {
+  color: gray;
+}
+
+body .container .suggestions .account-swt #swt-btn {
+  color: #00b9f1;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+body .container .suggestions .acc-suggestions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .suggestions .acc-suggestions .suggess-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: gray;
+}
+
+body .container .suggestions .acc-suggestions .suggess-txt #suggess-btn {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc img {
+  border-radius: 50%;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc .account-sgt-detail {
+  padding-left: 20px;
+  line-height: 0.05px;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc .account-sgt-detail #acc-follow {
+  color: gray;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item #follow-btn {
+  background-color: transparent;
+  border-color: transparent;
   color: #00b9f1;
 }
 /*# sourceMappingURL=style.css.map */
