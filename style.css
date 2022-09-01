@@ -87,6 +87,7 @@ body .container .feed .story {
   border-radius: 8px;
   margin-bottom: 15px;
   margin-top: 85px;
+  overflow: auto;
 }
 
 body .container .feed .story .story-item {
@@ -94,8 +95,6 @@ body .container .feed .story .story-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -119,6 +118,8 @@ body .container .feed .story .story-item .story-detail {
 
 body .container .feed .story .story-item .story-detail img {
   border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 body .container .feed .story .story-item .story-detail h5 {
