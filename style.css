@@ -10,8 +10,8 @@ body .top-bar {
   display: flex;
   height: 60px;
   width: 100%;
-  background-color: gray;
-  border-bottom: 1px solid black;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
   position: fixed;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -45,6 +45,7 @@ body .top-bar .top-bar-item input {
   border-radius: 5px;
   height: 30px;
   width: 250px;
+  background-color: lightgray;
   border-color: transparent;
 }
 
@@ -73,21 +74,19 @@ body .container {
   max-width: 740px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 80px;
 }
 
 body .container .feed {
-  background-color: gold;
   max-width: 420px;
   width: 100%;
 }
 
 body .container .feed .story {
-  width: 100%;
   height: 120px;
-  background-color: brown;
+  border: 1px solid lightgray;
   border-radius: 8px;
   margin-bottom: 15px;
-  margin-top: 85px;
   overflow: auto;
 }
 
@@ -129,12 +128,22 @@ body .container .feed .story .story-item .story-detail h5 {
 }
 
 body .container .feed .post {
-  background-color: cadetblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .feed .post .post-item {
+  border: 1px solid lightgray;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
-body .container .feed .post .post-profile {
+body .container .feed .post .post-item .post-profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,30 +155,34 @@ body .container .feed .post .post-profile {
           align-items: center;
 }
 
-body .container .feed .post .post-profile #profile {
+body .container .feed .post .post-item .post-profile #profile {
   border-radius: 50%;
 }
 
-body .container .feed .post .post-profile img {
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+body .container .feed .post .post-item .post-profile img {
+  margin: 5px 5px 5px 5px;
 }
 
-body .container .feed .post .post-profile .account-detail-post {
-  margin-left: 10px;
-  line-height: 0.05px;
+body .container .feed .post .post-item .post-profile .account-detail-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
 }
 
-body .container .feed .post .post-profile .account-detail-post #acc-bio {
+body .container .feed .post .post-item .post-profile .account-detail-post #acc-bio {
   color: gray;
 }
 
-body .container .feed .post .post-pic {
+body .container .feed .post .post-item .post-pic {
   padding-bottom: 5px;
 }
 
-body .container .feed .post .post-action {
+body .container .feed .post .post-item .post-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +193,7 @@ body .container .feed .post .post-action {
   margin-right: 10px;
 }
 
-body .container .feed .post .post-action .post-action-group {
+body .container .feed .post .post-item .post-action .post-action-group {
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,12 +203,12 @@ body .container .feed .post .post-action .post-action-group {
           justify-content: space-between;
 }
 
-body .container .feed .post #section-line {
+body .container .feed .post .post-item #section-line {
   border: 0.5px solid lightgray;
   width: 100%;
 }
 
-body .container .feed .post .post-comment-action {
+body .container .feed .post .post-item .post-comment-action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,67 +222,69 @@ body .container .feed .post .post-comment-action {
   margin-right: 10px;
 }
 
-body .container .feed .post .post-comment-action .post-comment-input {
+body .container .feed .post .post-item .post-comment-action .post-comment-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .container .feed .post .post-comment-action .post-comment-input input {
+body .container .feed .post .post-item .post-comment-action .post-comment-input input {
   margin-left: 5px;
   border-color: transparent;
 }
 
-body .container .feed .post .post-comment-action #post {
+body .container .feed .post .post-item .post-comment-action #post {
   color: #00b9f1;
 }
 
 body .container .suggestions {
-  background-color: silver;
   max-width: 320px;
   width: 100%;
-  padding-left: 35px;
-  padding-top: 110px;
+  margin-left: 35px;
+  padding-top: 20px;
 }
 
 body .container .suggestions .account-swt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+body .container .suggestions .account-swt #profile-acc-swt {
+  border-radius: 100%;
 }
 
 body .container .suggestions .account-swt .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .container .suggestions .account-swt .account #profile-acc-swt {
-  border-radius: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-left: 10px;
 }
 
 body .container .suggestions .account-swt .account .account-detail {
-  margin-left: 20px;
-  line-height: 0.05px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
 }
 
 body .container .suggestions .account-swt .account .account-detail #acc-bio {
   color: gray;
 }
 
-body .container .suggestions .account-swt #swt-btn {
+body .container .suggestions .account-swt .account #swt-btn {
   color: #00b9f1;
   background-color: transparent;
   border-color: transparent;
@@ -304,40 +319,44 @@ body .container .suggestions .acc-suggestions .suggess-acc-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc img {
+body .container .suggestions .acc-suggestions .suggess-acc-item img {
   border-radius: 50%;
 }
 
-body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc .account-sgt-detail {
-  margin-left: 20px;
-  line-height: 0.05px;
+body .container .suggestions .acc-suggestions .suggess-acc-item .account-sgt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-left: 10px;
 }
 
-body .container .suggestions .acc-suggestions .suggess-acc-item .suggess-acc .account-sgt-detail #acc-follow {
+body .container .suggestions .acc-suggestions .suggess-acc-item .account-sgt .account-sgt-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+
+body .container .suggestions .acc-suggestions .suggess-acc-item .account-sgt .account-sgt-detail #acc-follow {
   color: gray;
 }
 
-body .container .suggestions .acc-suggestions .suggess-acc-item #follow-btn {
+body .container .suggestions .acc-suggestions .suggess-acc-item .account-sgt #follow-btn {
   background-color: transparent;
   border-color: transparent;
   color: #00b9f1;

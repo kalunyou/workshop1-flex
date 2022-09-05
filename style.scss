@@ -6,8 +6,8 @@ body {
     display: flex;
     height: 60px;
     width: 100%;
-    background-color: gray;
-    border-bottom: 1px solid black;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
     position: fixed;
     justify-content: center;
     .top-bar-item {
@@ -27,6 +27,7 @@ body {
         border-radius: 5px;
         height: 30px;
         width: 250px;
+        background-color: lightgray;
         border-color: transparent;
       }
       .menu {
@@ -40,24 +41,21 @@ body {
       }
     }
   }
-
   .container {
     display: flex;
     justify-content: center;
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 80px;
     .feed {
-      background-color: gold;
       max-width: 420px;
       width: 100%;
       .story {
-        width: 100%;
         height: 120px;
-        background-color: brown;
+        border: 1px solid lightgray;
         border-radius: 8px;
         margin-bottom: 15px;
-        margin-top: 85px;
         overflow: auto;
         .story-item {
           height: 100%;
@@ -81,95 +79,99 @@ body {
         }
       }
       .post {
-        background-color: cadetblue;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        .post-profile {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          #profile {
-            border-radius: 50%;
-          }
-          img {
-            margin-left: 5px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-          }
-          .account-detail-post {
-            margin-left: 10px;
-            line-height: 0.05px;
-            #acc-bio {
-              color: gray;
+        display: flex;
+        flex-direction: column;
+        .post-item {
+          border: 1px solid lightgray;
+          border-radius: 8px;
+          margin-bottom: 10px;
+          .post-profile {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            #profile {
+              border-radius: 50%;
+            }
+            img {
+              margin: 5px 5px 5px 5px;
+            }
+            .account-detail-post {
+              display: flex;
+              flex-direction: column;
+              font-size: 14px;
+              #acc-bio {
+                color: gray;
+              }
             }
           }
-        }
-        .post-pic {
-          padding-bottom: 5px;
-        }
-        .post-action {
-          display: flex;
-          justify-content: space-between;
-          margin-left: 10px;
-          margin-right: 10px;
-          .post-action-group {
-            width: 100px;
+          .post-pic {
+            padding-bottom: 5px;
+          }
+          .post-action {
             display: flex;
             justify-content: space-between;
-          }
-        }
-        #section-line {
-          border: 0.5px solid lightgray;
-          width: 100%;
-        }
-        .post-comment-action {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-left: 10px;
-          margin-right: 10px;
-          .post-comment-input {
-            display: flex;
-            input {
-              margin-left: 5px;
-              border-color: transparent;
+            margin-left: 10px;
+            margin-right: 10px;
+            .post-action-group {
+              width: 100px;
+              display: flex;
+              justify-content: space-between;
             }
           }
-          #post {
-            color: rgb(0, 185, 241);
+          #section-line {
+            border: 0.5px solid lightgray;
+            width: 100%;
+          }
+          .post-comment-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            .post-comment-input {
+              display: flex;
+              input {
+                margin-left: 5px;
+                border-color: transparent;
+              }
+            }
+            #post {
+              color: rgb(0, 185, 241);
+            }
           }
         }
       }
     }
     .suggestions {
-      background-color: silver;
       max-width: 320px;
       width: 100%;
-      padding-left: 35px;
-      padding-top: 110px;
+      margin-left: 35px;
+      padding-top: 20px;
       .account-swt {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        width: 100%;
+        #profile-acc-swt {
+          border-radius: 100%;
+        }
         .account {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          #profile-acc-swt {
-            border-radius: 100%;
-          }
+          justify-content: space-between;
+          width: 100%;
+          margin-left: 10px;
           .account-detail {
-            margin-left: 20px;
-            line-height: 0.05px;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
             #acc-bio {
               color: gray;
             }
           }
-        }
-        #swt-btn {
-          color: rgb(0, 185, 241);
-          background-color: transparent;
-          border-color: transparent;
+          #swt-btn {
+            color: rgb(0, 185, 241);
+            background-color: transparent;
+            border-color: transparent;
+          }
         }
       }
       .acc-suggestions {
@@ -186,27 +188,31 @@ body {
         }
         .suggess-acc-item {
           display: flex;
-          justify-content: space-between;
           align-items: center;
-          .suggess-acc {
+          width: 100%;
+          margin-bottom: 10px;
+          img {
+            border-radius: 50%;
+          }
+          .account-sgt {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-              border-radius: 50%;
-            }
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 10px;
             .account-sgt-detail {
-              margin-left: 20px;
-              line-height: 0.05px;
+              display: flex;
+              flex-direction: column;
+              font-size: 14px;
               #acc-follow {
                 color: gray;
               }
             }
-          }
-          #follow-btn {
-            background-color: transparent;
-            border-color: transparent;
-            color: rgb(0, 185, 241);
+
+            #follow-btn {
+              background-color: transparent;
+              border-color: transparent;
+              color: rgb(0, 185, 241);
+            }
           }
         }
       }
