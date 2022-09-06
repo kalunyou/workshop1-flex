@@ -71,9 +71,10 @@ body {
               padding-left: 5px;
               padding-right: 5px;
             }
-            h5 {
+            span {
+              font-size: 14px;
+              font-weight: bold;
               margin: 0;
-              padding-top: 5px;
             }
           }
         }
@@ -128,6 +129,7 @@ body {
             align-items: center;
             margin-left: 10px;
             margin-right: 10px;
+            margin-bottom: 10px;
             .post-comment-input {
               display: flex;
               input {
@@ -137,6 +139,9 @@ body {
             }
             #post {
               color: rgb(0, 185, 241);
+              background-color: transparent;
+              border-color: transparent;
+              padding: 0;
             }
           }
         }

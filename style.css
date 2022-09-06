@@ -122,9 +122,10 @@ body .container .feed .story .story-item .story-detail img {
   padding-right: 5px;
 }
 
-body .container .feed .story .story-item .story-detail h5 {
+body .container .feed .story .story-item .story-detail span {
+  font-size: 14px;
+  font-weight: bold;
   margin: 0;
-  padding-top: 5px;
 }
 
 body .container .feed .post {
@@ -220,6 +221,7 @@ body .container .feed .post .post-item .post-comment-action {
           align-items: center;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 body .container .feed .post .post-item .post-comment-action .post-comment-input {
@@ -235,6 +237,9 @@ body .container .feed .post .post-item .post-comment-action .post-comment-input 
 
 body .container .feed .post .post-item .post-comment-action #post {
   color: #00b9f1;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
 }
 
 body .container .suggestions {
